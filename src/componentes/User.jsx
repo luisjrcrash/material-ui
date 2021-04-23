@@ -21,7 +21,8 @@ const User = () => {
 
     return (
         <div>
-          asdf  
+          <h3>{pueblo.name}</h3>
+          <p>{pueblo.team_bonus}</p>
         </div>
     )
 }
