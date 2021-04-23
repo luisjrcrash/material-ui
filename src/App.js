@@ -19,6 +19,7 @@ import PaginaDos from './Paginas/PaginaDos';
 import Contacto from './componentes/Contacto';
 import Nosotros from './componentes/Nosotros';
 import Inicio from './componentes/Inicio';
+import User from './componentes/User';
 
 function App() {
 
@@ -32,14 +33,17 @@ function App() {
          <Link to = "/" className = "btn btn-dark">
          Inicio
          </Link>
-         <Link to = "Nosotros" className = "btn btn-dark">
+         <Link to = "/nosotros" className = "btn btn-dark">
            Pokemon
          </Link>
-         <Link to = "Contacto" className = "btn btn-dark">
+         <Link to = "/contacto" className = "btn btn-dark">
            Age of empires
          </Link>
        </div>
     <Switch>
+      <Route path = "/contacto/:id">
+      <User/>
+      </Route>
     <Route path = "/contacto">
       <Contacto/>
     </Route>
